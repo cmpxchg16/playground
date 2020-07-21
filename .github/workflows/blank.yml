@@ -1,0 +1,14 @@
+name: Playground
+
+on:
+  schedule:
+    - cron:  '*/1 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: run
+      run: |
+        bash -c 'STATUS=`curl -s -o /dev/null -I -w "%{http_code}" http://cmpxchg16.me` && if [ $STATUS != 200 ]; then exit 1; fi'
