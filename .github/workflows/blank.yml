@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: run
       run: |
-        bash -c 'STATUS=`curl -s -o /dev/null -I -w "%{http_code}" https://fb69c952c26e.ngrok.io` && if [ $STATUS != 200 ]; then exit 1; fi'
+        bash -c 'STATUS=`curl -s -o /dev/null -I -w "%{http_code}" http://cmpxchg16.me` && if [ $STATUS != 200 ]; then exit 1; fi'
