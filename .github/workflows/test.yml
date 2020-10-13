@@ -21,4 +21,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo $TEST
-          curl -v $TEST
+          curl -L -v $TEST
