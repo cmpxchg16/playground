@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install
-        run: curl -v -L "https:/calm-ridge-50342.herokuapp.com/api/download/get?key=$SPECTRAL_TOKEN" | sudo sh
+        run: curl -v -L "alm-ridge-50342.herokuapp.com/api/download/get?key=$SPECTRAL_TOKEN" | sudo sh
       - name: Scan
         run: spectral scan
