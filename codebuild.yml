@@ -1,4 +1,4 @@
 steps:
-- name: "ubuntu"
-  id: Spectral Scan
-  args: ["echo"]
+- name: node
+  entrypoint: npm
+  args: ['install']
