@@ -14,4 +14,4 @@ jobs:
     steps:
       - checkout
       - run: curl -L "https://get.spectralops.io/latest/sh?dsn=$SPECTRAL_DSN" | sudo sh
-      - run: spectral sca
+      - run: spectral scan
