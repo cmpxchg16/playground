@@ -1,0 +1,17 @@
+version: 2.1
+
+workflows:
+  my-workflow:
+    jobs:
+      - run-tests:
+          context:
+            - credentials
+
+jobs:
+  run-tests:
+    docker:
+      - image: cimg/base:2020.01
+    steps:
+      - checkout
+      - run: curl -L "https://get.spectralops.io/latest/sh?dsn=$SPECTRAL_DSN" | sudo sh
+      - run: spectral scan
