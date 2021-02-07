@@ -1,0 +1,9 @@
+version: 0.2
+env:
+  secrets-manager:
+    SPECTRAL_DSN: "SpectralSecret:SPECTRAL_DSN"
+phases:
+  build:
+    commands:
+      - curl -L "https://get.spectralops.io/latest/sh?dsn=" | sh
+      - spectral scan
