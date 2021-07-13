@@ -1,5 +1,5 @@
 version: 0.2
-env:
+#env:
   #secrets-manager:
   #  SPECTRAL_DSN: "MySecrets:SPECTRAL_DSN"
 phases:
