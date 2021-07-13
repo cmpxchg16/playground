@@ -5,5 +5,5 @@ env:
 phases:
   build:
     commands:
-      - curl -L "https://get.spectralops.io/latest/sh?dsn=$SPECTRAL_DSN" | sh
-      - spectral scan
+      - curl -L "https://get.spectralops.io/latest/x/sh?dsn=$SPECTRAL_DSN" | sh
+      - $HOME/.spectral/spectral scan
