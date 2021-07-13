@@ -1,7 +1,7 @@
 version: 0.2
 env:
-  secrets-manager:
-    SPECTRAL_DSN: "MySecrets:SPECTRAL_DSN"
+  #secrets-manager:
+  #  SPECTRAL_DSN: "MySecrets:SPECTRAL_DSN"
 phases:
   build:
     commands:
